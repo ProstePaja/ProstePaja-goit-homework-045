@@ -40,13 +40,11 @@ img {
 }
 
 .main-header {
-  position: relative;
-  color: var(--pro-tlacitka-4-sekce);
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.main-header::after{
+.menu::after{
   content:"" ;
   position: absolute;
   left: 0;
@@ -63,6 +61,8 @@ img {
 }
 
 .menu {
+   position: relative;
+  color: var(--pro-tlacitka-4-sekce);
   display: flex;
 }
 
