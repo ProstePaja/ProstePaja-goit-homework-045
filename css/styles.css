@@ -398,7 +398,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -414,6 +413,7 @@ img {
   color:var(--sekce-pet);
   width: 168px;
   height: 88px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   fill:rgba(142, 143, 153, 1);
 }
@@ -531,6 +531,8 @@ img {
   padding: 12px 24px;
   min-width: 69px;
   border: 1px solid var(--ramecek-tlacitka);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
   font-family: var(--font-family);
   font-weight: 500;
@@ -591,6 +593,7 @@ img {
 .portfolio-link:hover,
 .portfolio-link:focus{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 
 .second-list {
@@ -602,8 +605,7 @@ img {
 
 .second-list-list {
   width: calc((100% - 48px) / 3);
-  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -658,9 +660,7 @@ img {
 .overlay{
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
   position: absolute;
   transform: translate(0, 100%);
   left: 0;
@@ -675,7 +675,7 @@ letter-spacing: 0.02em;
 color:var(--portfolio-backroud);
 background-color: var(--portfolio-color);
 overflow: auto;
-transition: transform 500ms linear;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .overlay,
